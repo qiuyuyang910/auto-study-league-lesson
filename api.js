@@ -9,3 +9,4 @@ export async function study(openid, id) {
 export async function getNewCourse() {
     return await fetch(`${BASE_URL}/new_course.json?time=${new Date().getTime()}`).then(res => res.json())
 }
+
